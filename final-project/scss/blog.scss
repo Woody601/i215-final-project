@@ -1,0 +1,75 @@
+@import 'mixins.scss';
+.blogs {
+    max-width: 980px;
+    margin: 158px auto 86px;
+    .header {
+        @include page-header();
+    }
+    .blog-list {
+        margin-top: 29.5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .blog-display {
+            text-decoration: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end  ;
+            max-width: 460px;
+            min-height: 257px;
+            margin-bottom: 30px;
+            .blog-image {
+                margin-left: 20px;
+                background-image:url('/images/blog-icon.png');
+                height: 140px;
+                width: 380px;
+            }
+            .title {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 15px;
+                color: #000;
+                margin-top: 20px;
+                max-width: 380px;
+            }
+            .description {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 13px;
+                color: #EE4367;
+                margin-top: 11px;
+                max-width: 380px;
+            }
+        }
+    }
+    @media only screen and (max-width:1023px) {
+        .header {
+            margin-left: 5%;
+        }
+        .blog-list {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    @media only screen and (max-width:650px) {
+        .blogs {
+            .header {
+                margin-top: 189px;
+            }
+        }
+    }
+    @media only screen and (max-width:500px) {
+            .blog-list {
+                .blog-display {
+                    margin: auto 5% 30px;
+                    justify-content: flex-start;
+                    .blog-image {
+                        margin-left: 0;
+                        background-image:url('/images/blog-icon.png');
+                        background-position: center;
+                        height: 140px;
+                        max-width: 380px;
+                        width: 100%;
+                    }
+                }
+            }
+    }
+}

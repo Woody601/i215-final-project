@@ -1,0 +1,142 @@
+@import 'mixins.scss';
+.gallery {
+    max-width: 1280px;
+    margin: auto;
+    .gallery-section {
+        max-width: 980px;
+        margin-top: 158px;
+        margin: 158px auto 60px;
+        align-self: center;
+        .header {
+            @include page-header();
+            margin-bottom: 28.5px;
+        }
+        .gallery-images {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: auto;
+            .image {
+                margin-bottom: 20px;
+                .food-festival {
+                    background-image: linear-gradient(rgba(255, 209, 64, 0.7),
+                           rgba(255, 209, 64, 0.7)), url("/images/food-festival-icon.png");
+                    background-position: center;
+                    width: 489px;
+                    height: 187px;
+                }
+                .dee-jay {
+                    background-image: linear-gradient(rgba(238, 67, 103, 0.7),
+                           rgba(238, 67, 103, 0.7)), url("/images/dee-jay-icon.png");
+                    background-position: center;
+                    width: 187px;
+                    height: 187px;
+                }
+                .speech {
+                    background-image: linear-gradient(rgba(8, 173, 105, 0.7),
+                           rgba(8, 173, 105, 0.7)), url("/images/speech-icon.png");
+                    background-position: center;
+                    width: 265px;
+                    height: 187px;
+                }
+                .open-foodfest {
+                    background-image: linear-gradient(rgba(84, 13, 110, 0.7),
+                    rgba(84, 13, 110, 0.7)), url("/images/open-foodfest-icon.png");
+                    background-position: center;
+                    width: 603px;
+                    height: 306px;
+                }
+                .international {
+                    background-image: linear-gradient(rgba(59, 206, 171, 0.7),
+                    rgba(59, 206, 171, 0.7)), url("/images/international-icon.png");
+                    background-position: center;
+                    width: 355px;
+                    height: 306px;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width:1019px) {
+        .gallery-section   {
+            margin: 158px 5% 40px;
+            .gallery-images {
+                max-width: 757px;
+                .image {
+                    .food-festival {
+                        width: 265px;
+                    }
+                    .open-foodfest {
+                        width: 368px;
+                    }
+                    .international {
+                        width: 368px;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width:842px) {
+        .gallery-section   {
+            .gallery-images {
+                max-width: 601px;
+                .image {
+                    .food-festival {
+                        width: 187px;
+                    }
+                    .speech {
+                        width: 187px;
+                    }
+                    .open-foodfest {
+                        width: 601px;
+                    }
+                    .international {
+                        width: 601px;
+                        background-image: linear-gradient(rgba(59, 206, 171, 0.7),
+                    rgba(59, 206, 171, 0.7)), url("/images/international-icon-med.png");
+                    background-position: center;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width:668px) {
+        .gallery-section   {
+            .gallery-images {
+                flex-direction: column;
+                align-items: stretch;
+                max-width: 489px;
+                .image {
+                    .food-festival {
+                        width: auto;
+                    } 
+                    .dee-jay {
+                        background-image: linear-gradient(rgba(238, 67, 103, 0.7),
+                           rgba(238, 67, 103, 0.7)), url("/images/dee-jay-icon-wide.png");
+                           background-position: center;
+                        width: auto;
+                        
+                    } 
+                    .speech {
+                        width: auto;
+                        background-image: linear-gradient(rgba(8, 173, 105, 0.7),
+                           rgba(8, 173, 105, 0.7)), url("/images/speech-icon-wide.png");
+                           background-position: center;
+                    }
+                    .open-foodfest {
+                        width: auto;
+                        height: 187px;
+                        background-image: linear-gradient(rgba(84, 13, 110, 0.7),
+                    rgba(84, 13, 110, 0.7)), url("/images/open-foodfest-icon-wide.png");
+                    }
+                    .international {
+                        width: auto;
+                        height: 187px;
+                        background-image: linear-gradient(rgba(59, 206, 171, 0.7),
+                    rgba(59, 206, 171, 0.7)), url("/images/international-icon-wide.png");
+                    }
+                }
+            }
+        }
+    }
+}
