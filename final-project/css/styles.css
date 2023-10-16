@@ -1197,6 +1197,7 @@ footer .contact-info {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  text-align: center;
 }
 footer .contact-info p {
   margin-bottom: 0;
