@@ -1,0 +1,89 @@
+.contact {
+    //height: 600px;
+    //background-color: coral;
+    // display: flex;
+    // justify-content: space-between;
+    // flex-wrap: wrap;
+    max-width: 980px;
+    min-height: 525px;
+    margin: 158px auto 100px;
+    .contact-header {
+        @include page-header();
+        margin-bottom: 64px;
+    }
+    .contactLayout {
+        display: flex;
+        justify-content: space-between;
+        .map {
+            img {
+                max-width: 400px;
+                width:100%;
+            }
+            
+        }
+        .contactForm {
+            max-width: 529px;
+            //background-color: blue;
+            .textFields {
+                width: 100%;
+                height: 60px;
+                margin-bottom: 21px;
+                padding-left: 20px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 16px;
+                resize: none;
+                background-color: #F5F5F5;
+                border: none;
+            }
+            textarea {
+                padding-top: 20px;
+                min-height: 200px;
+            }
+            .submit {
+                width: 167px;
+                height: 60px;
+                font-size: 16px;
+                text-transform: uppercase;
+                letter-spacing: 1.6px;
+                @include site-button();
+            }
+        }
+    }
+}
+@media only screen and (max-width:1023px) {
+    .contact-header {
+        margin-left: 5%;
+    }
+    .contactLayout {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .submit {
+        margin: auto;
+    }
+}
+@media only screen and (max-width:980px) {
+    .contactLayout    {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: auto 5%;
+        .map {
+            margin-bottom: 20px;
+        }
+    }
+}
+@media only screen and (max-width:650px) {
+    .contact {
+        .contact-header {
+            margin-top: 189px;
+        }
+    }
+}
+@media only screen and (max-width:445px) {
+    .contactLayout {
+        .map {
+            width: auto;
+            height: auto;
+        }
+    }
+}

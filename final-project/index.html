@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/proxima-nova-condensed"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT Serif Caption"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="site-container">
+      <nav>
+        <div class="nav-container" id="nav-holder">
+          <div class="logo">eventsy</div>
+          <div class="links">
+            <a href="#" id="home">home</a>
+            <span>/</span>
+            <a href="#" id="about">about</a>
+            <span>/</span>
+            <a href="#" id="gallery">gallery</a>
+            <span>/</span>
+            <a href="#" id="blog">blog</a>
+            <span>/</span>
+            <a href="#" id="contactus">contact</a>
+          </div>
+        </div>
+      </nav>
+      <div id="app"></div>
+      <footer>
+        <div class="logo">eventsy</div>
+        <div class="contact-info">
+          <p>420 Smoke St. Los Angeles, CA 46318</p>
+          <a href="tel:(213)-467-2627" title="Give us a call!"
+            >(213)-467-2627</a
+          >
+          <a href="mailto:info@eventsy.com" title="Send us an email!"
+            >info@eventsy.com</a
+          >
+        </div>
+        <div class="newsletter-subscription">
+          <input
+            type="text"
+            class="email-entry"
+            placeholder="Enter your email to join newsletter…"
+          />
+          <input type="submit" class="subscribe-btn" value="Subscribe" />
+        </div>
+        <div class="social-media">
+          <a href="#" class="sm-icon" title="Facebook"
+            ><img src="images/facebook.png" alt="facebook"
+          /></a>
+          <a href="#" class="sm-icon" title="Instagram"
+            ><img src="images/instagram.png" alt="instagram"
+          /></a>
+          <a href="#" class="sm-icon" title="Twitter"
+            ><img src="images/twitter.png" alt="twitter"
+          /></a>
+        </div>
+        <div class="copyright">Copyright 2019 eventsy. All rights reserved</div>
+        <div class="social-media"></div>
+      </footer>
+      <script src="lib/jquery-3.7.1.min.js"></script>
+      <script type="module" src="model/model.js"></script>
+      <script type="module" src="app/app.js"></script>
+    </div>
+  </body>
+</html>
